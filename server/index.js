@@ -9,10 +9,13 @@ const DefaultData = require("./dummy_data")
 
 const userRouter = require("./routers/userRouter");
 const paytmRouter = require("./routers/paytmRouter");
+const { default: mongoose } = require("mongoose");
 
 const app = express();
 
-dbConnect();
+//dbConnect();
+mongoose.connect(process.env.DATABASE_URL)
+console.log('connected');
 
 const PORT = process.env.PORT || 5000;
 
