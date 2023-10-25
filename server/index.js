@@ -4,7 +4,7 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const dotenv = require("dotenv").config();
 
-const dbConnect = require("./config/dbconnect");
+//const dbConnect = require("./config/dbconnect");
 const DefaultData = require("./dummy_data")
 
 const userRouter = require("./routers/userRouter");
